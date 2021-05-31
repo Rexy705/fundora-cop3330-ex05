@@ -6,18 +6,21 @@ public class ex05 {
                 input2 = new Scanner(System.in);
 
         System.out.print("What is the first number? ");
-        Double d1 = input1.nextDouble();
+        String s1 = input1.next();
         System.out.print("What is the second number? ");
-        Double d2 = input2.nextDouble();
+        String s2 = input2.next();
 
-        double a1 = d1 + d2;
-        double a2 = d1 - d2;
-        double a3 = d1 * d2;
-        double a4 = d1 / d2;
+        int first = Integer.parseInt(s1);
+        int second = Integer.parseInt(s2);
 
-        System.out.println(d1 + " + " + d2 + " = " + a1 + "\n" +
-                           d1 + " - " + d2 + " = " + a2 + "\n" +
-                           d1 + " * " + d2 + " = " + a3 + "\n" +
-                           d1 + " / " + d2 + " = " + a4);
+        int total1 = first + second;
+        int total2 = first - second;
+        int total3 = first * second;
+        int total4 = first / second;
+
+        System.out.println(first + " + " + second + " = " + total1 + "\n" +
+                           first + " - " + second + " = " + total2 + "\n" +
+                           first + " * " + second + " = " + total3 + "\n" +
+                           first + " / " + second + " = " + total4);
         }
     }
